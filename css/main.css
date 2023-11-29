@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pruducts {
+  width: 100%;
+  padding: 30px;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  text-align: center;
+}
+.pruducts .pruduct {
+  width: 40%;
+  margin: 10px;
+  display: inline-block;
+}
+.pruducts .pruduct h1 {
+  font-size: 20px;
+  /* text-align: center;*/
+  margin-bottom: 10px;
+}
+.pruducts .pruduct img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.pruducts .pruduct p {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.pruducts .pruduct label[for="show"] {
+  display: block;
+  width: 120px;
+  height: 35px;
+  background-color: blue;
+  text-align: center;
+  cursor: pointer;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.pruducts .pruduct #show {
+  display: none;
+}
+.pruducts .pruduct .modal {
+
+  position: absolute;
+  left: 0;
+  top:-100vh ;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100vh;
+}
+.pruducts .pruduct .modal h1{
+    color: brown;
+    
+    margin-bottom: 10px;
+    text-align: center;
+  }
+.pruducts .pruduct .modal img {
+    width: 30%;
+    margin-bottom: 10px;
+
+}
+.pruducts .pruduct .modal p{
+    all: unset;
+    display: block;
+    width: 30%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px auto;
+    color: brown;
+}
+.pruducts .pruduct .modal label[for="show"] {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    background-color: rgb(195, 255, 0);
+    text-align: center;
+    cursor: pointer;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.pruducts .pruduct  #show:checked ~ .modal {
+   /* display: none;*/
+   top: 0;
+
+}
+.pruducts .pruduct .modal label[for=close]{
+  all : unset;
+  display: block;
+position: absolute;
+width: 35px;
+height: 35px;
+  top :0 ;
+  left: 0;
+  font-size: 30px;
+  line-height: 35px;
+  color: beige;
+  background-color: blue;
+  cursor: pointer;
+}
+#close {
+  display: none;
+}
